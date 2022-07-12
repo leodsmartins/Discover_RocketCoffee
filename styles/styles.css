@@ -1,0 +1,217 @@
+@import "./settings.css";
+
+
+/* Header */
+
+.header {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 918px;
+    padding-top: 20px;
+}
+
+.header__logo {
+    max-width: 172px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav {
+        text-align: center;
+        color: var(--text-color);
+        margin: 0 auto;
+        flex: 2;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+li a:hover {
+    color: var(--button);
+}
+
+        
+.header__button {
+    max-width: 172px;
+    background: transparent;
+    border: solid 2px var(--button);
+    color: var(--text-color);
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.header__button:hover {
+    color: var(--button);
+}
+
+
+/* Main */
+
+.main__container {
+
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+p.mobile {
+    color: white;
+    font-size: 1.875em;
+    margin: 80px 50px;
+    text-align: center;
+}
+
+button.mobile {
+        background: transparent;
+        border: solid 2px var(--button);
+        color: var(--text-color);
+        text-transform: uppercase;
+        border-radius: 5px;
+        padding: 10px 30px;
+        cursor: pointer;
+        font-weight: bold;
+}
+
+.main__mobile-button img {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 10px;
+}
+
+h1 {
+    font-size: 5em;
+    color: var(--text-color);
+    flex: 1;
+    display: flex;
+    align-items: end;
+
+
+}
+
+p.main__great {
+    font-size: 5em;
+    display: flex;
+    align-items: start;
+    flex: 1;
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+.main__photo {
+    flex: 2;
+    display: flex;
+    align-items: end;
+}
+
+.main__menu {
+    height: 100vh;
+}
+
+.main__menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;   
+}
+
+.main__menu li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.125em;
+    color: var(--text-color-menu-mobile);
+    border-top: solid 2px var(--border);
+}
+
+
+.main__menu a {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+
+
+.main__menu li:last-child {
+    border-bottom: solid 2px var(--border);
+    padding-bottom: 20px;
+   
+}
+
+.mobile {
+    display: none;
+}
+
+li.menu-disabled:hover::before {
+  content: ''; 
+  width: 5px;
+  height: 60px;
+  background-color: var(--button);
+}
+
+
+.background {
+    background-image: url("../assets/assets/blur-2.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+
+
+
+
+
+@media (max-width: 769px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .menu-disabled {
+        display: none;
+    }
+
+    .background {
+        background: transparent;
+    }
+
+    .header__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .header__photo-1, .header__photo-2, .header__photo-3 {
+        margin: 20px 20px;
+    }
+    
+    .main__container h1{
+            font-size: 3em;
+            text-align: center;
+    }
+
+    p.main__great{
+        font-size: 3em;
+        text-align: center;
+    }
+} 
+

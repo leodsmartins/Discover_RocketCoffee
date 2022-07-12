@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Nunito:ital,wght@0,400;0,700;1,400&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif;
+}
+
+li {
+    list-style: none;
+    }
+
+a {
+    text-decoration: none ;
+    color: var(--text-color);
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+body {
+background-color: var(--background);
+background-image: url("../assets/assets/blur-1.png");
+background-repeat: no-repeat;
+background-position: bottom left;
+
+}
+
+
+:root {
+    --background: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+}
